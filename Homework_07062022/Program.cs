@@ -69,8 +69,9 @@ Console.Write("Введите число: ");
 int N = int.Parse(Console.ReadLine());
 int index = 2;
 
-while (N>index)
+while (N>=index)
 {
     Console.WriteLine(index);
     index = index + 2;
 }
+
