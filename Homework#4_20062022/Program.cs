@@ -59,7 +59,7 @@ Console.WriteLine(sum); */
 6, 1, 33 -> [6, 1, 33] */
 
 
-int Func(int A)
+/* int Func(int A)
 {
     Console.WriteLine("Введите число: ");
     int B = int.Parse(Console.ReadLine());
@@ -67,6 +67,26 @@ int Func(int A)
 }
 
 int A = 0;
-Console.WriteLine($"[{Func(A)},{Func(A)},{Func(A)},{Func(A)},{Func(A)},{Func(A)},{Func(A)},{Func(A)},]");
+Console.WriteLine($"[{Func(A)},{Func(A)},{Func(A)},{Func(A)},{Func(A)},{Func(A)},{Func(A)},{Func(A)},]"); */
 
+Console.WriteLine("Введите количество элементов массива: ");
+int B = int.Parse(Console.ReadLine());
+int[] mass = new int[B];
+for (int i = 0; i < mass.Length; i++)
+{
+    mass[i] = new Random().Next(0, 100);
+}
+Console.Write("[");
+for (int i = 0; i < mass.Length; i++)
+{
+    if (i < (mass.Length - 1))
+    {
+        Console.Write(mass[i]+", ");
+    }
+    else 
+    {
+        Console.Write(mass[i]);
+    }
+}
+Console.Write("]");
 
